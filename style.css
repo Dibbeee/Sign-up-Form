@@ -1,5 +1,8 @@
 :root{
-    --font-size: 0.8rem
+    --smaller-font: 0.7rem;
+    --font-size: 0.9rem;
+    --margin: 1rem;
+    --padding: 1rem;
 }
 
 *,
@@ -50,14 +53,15 @@ html{
     background: #000;
     opacity: 0.5;
     padding: 0.6rem;
-    padding-top: 1rem;
+    padding-top: var(--padding);
     border: 1px solid #b4b0b0;
     border-radius: 15px;
-    font-size: var(--font-size);
+    font-size: var(--smaller-font);
+    text-align: center;
 }
 
 .form-container{
-    background: #fff;
+    background: linear-gradient(to right,#e8b717, #894e07 );
     width: 40%;
 }
 
@@ -67,7 +71,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 1rem;
+    padding-left: var(--padding);
     font-size: var(--font-size);
 }
 
@@ -80,24 +84,34 @@ html{
 }
 
 .form-header{
-    font-size: 1rem;
+    font-size: var(--font-size);
     text-decoration: overline;
-    margin-bottom: 1rem;
+    margin-bottom: var(--margin);
 }
 
 .form > div{
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+    margin-right: var(--margin);
+    margin-bottom: var(--margin);
+}
+
+.form > div > label{
+    font-size: 0.7rem;
 }
 
 .submitBtn{
     width: 6rem;
     padding: 0.3rem;
-    background: linear-gradient(to right, #e8b717, #894e07);
+    background: linear-gradient(to right, #e3ce88, #894e07);
     border-radius: 10px;
+    font-weight: 700;
 }
 
 .submitBtn:hover{
     cursor: pointer;
     scale: 1.01;
+}
+
+.login{
+    font-size: var(--smaller-font);
+    margin: var(--margin);
 }
