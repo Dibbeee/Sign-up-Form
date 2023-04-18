@@ -18,29 +18,51 @@
           <footer class="credits">Photo by Dhiva Krishna on Unsplash</footer>
         </div>
         <div class="form-container">
-          <p class="header_text">Sign up now for a chance at a new Audi!</p>
-          <p class="disclaimer">This is not a real form...</p>
-          <form action="#">
+          <div class="form-title">
+            <p class="header_text">Sign up now for a chance at a new Audi!</p>
+            <p class="disclaimer">This is not a real form...</p>
+          </div>
+          <form action="#" method="get" class="form">
+            <h4 class="form-header">
+              Be the first one to get a lovely new vehicle
+            </h4>
             <div>
               <label for="firstName">First Name</label>
               <br />
-              <input type="text" name="firstName" />
-
+              <input type="text" name="firstName" id="firstName" />
+            </div>
+            <div>
               <label for="lastName">Last Name</label>
-              <input type="text" name="lastName" />
+              <br />
+              <input type="text" name="lastName" id="lastName" />
             </div>
             <div>
               <label for="mail">Email</label>
-              <input type="email" name="mail" />
+              <br />
+              <input type="email" name="mail" id="mail" />
             </div>
-            <label for="phoneNumber">Phone number</label>
-            <input type="number" name="phoneNumber" />
-
-            <label for="password">Password</label>
-            <input type="password" name="password" />
-
-            <label for="confirmPassword">Confirm Password</label>
-            <input type="password" name="confirmPassword" />
+            <div>
+              <label for="phoneNumber">Phone number</label>
+              <br />
+              <input type="number" name="phoneNumber" id="phoneNumber" />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <br />
+              <input type="password" name="password" id="password" />
+            </div>
+            <div>
+              <label for="confirmPassword">Confirm Password</label>
+              <br />
+              <input
+                type="password"
+                name="confirmPassword"
+                id="confirmPassword"
+              />
+            </div>
+            <button type="submit" class="submitBtn" id="submitBtn">
+              Sign up!
+            </button>
           </form>
         </div>
       </div>
