@@ -63,6 +63,7 @@ html{
 .form-container{
     background: linear-gradient(to right,#e8b717, #894e07 );
     width: 40%;
+    position: relative;
 }
 
 .form-title{
@@ -98,6 +99,10 @@ html{
     font-size: 0.7rem;
 }
 
+.validatePass{
+    font-size: var(--smaller-font);
+}
+
 .submitBtn{
     width: 6rem;
     padding: 0.3rem;
@@ -111,7 +116,20 @@ html{
     scale: 1.01;
 }
 
+input:focus{
+    outline: none;
+    border: 1.7px solid #69c0e6
+}
+
 .login{
     font-size: var(--smaller-font);
     margin: var(--margin);
+}
+
+.signOff{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    font-size: var(--smaller-font);
+    color: rgb(201, 204, 207);
 }
