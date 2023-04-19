@@ -1,13 +1,18 @@
 
-let submitBtn = document.getElementById("submitBtn");
-submitBtn = document.addEventListener('click', checkPassword());
+document.querySelector('.submitBtn').onclick = function() {
+    const password = document.querySelector('.password').value;
+    const confirmPassword = document.querySelector('.confirmPassword').value;
 
-// function checkPassword() {
-//     let password = document.getElementById("password").value;
-//     let confirmPassword = document.getElementById("confirmPassword").value;
-//     if (password.value === confirmPassword.value) {
-//         console.log("Your passwords match");
-//     } else{
-//         console.log('Password not matched')
-//     }
-// }
+    if(password === ''){
+        alert('Please enter your password');
+    }else if(confirmPassword === ''){
+        alert('Please confirm your password');
+    }else if(password!== confirmPassword){
+        alert('Passwords do not match');
+        return false;
+    }else if(password === confirmPassword){
+        alert('Passwords match');
+        return true;
+    }
+}
+
