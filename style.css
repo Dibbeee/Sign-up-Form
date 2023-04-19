@@ -3,6 +3,7 @@
     --font-size: 0.9rem;
     --margin: 1rem;
     --padding: 1rem;
+    --error-color: #F8ED10;
 }
 
 *,
@@ -99,8 +100,10 @@ html{
     font-size: 0.7rem;
 }
 
-.validatePass{
+.validatePass,
+.validateConfirmPass{
     font-size: var(--smaller-font);
+    color: var(--error-color);
 }
 
 .submitBtn{
