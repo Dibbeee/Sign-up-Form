@@ -3,7 +3,7 @@
 # Sign-up-Form
 
 I have just finished the initial project of the Sign-up form for the intermediate html and css Course.
-<br/>
+/n
 I took some time to get going becasue it didnt seem so fun at first, but when I eventually started with the project I found that it was a bit of a brain teaser since I had not really made a real sign-up form before this project...
 <br/>
 The trickiest thing for me about this project was first to visualise how the structure of the sign-up form and layout was going to be constructed and then trying back and forth between different styles and such but eventually I settled on the structure of the sign-up form and after that it was pretty easy to implement the rest of the stuff...
